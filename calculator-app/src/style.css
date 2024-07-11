@@ -1,0 +1,70 @@
+/* Reset some default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-image: linear-gradient(to right, #68D391, #63B3ED);
+  font-family: Arial, sans-serif;
+}
+
+/* Center text */
+.text-center {
+  text-align: center;
+}
+
+/* Calculator container */
+.calculator {
+  background-color: #ffffff;
+  padding: 1rem;
+  border-radius: 0.25rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 300px; /* Adjust width as needed */
+}
+
+/* Title styling */
+.title {
+  font-size: 1.875rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+/* Display input */
+.display {
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.25rem;
+}
+
+/* Grid layout for buttons */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.5rem;
+}
+
+/* Button base styles */
+.button {
+  background-color: #f0f0f0; /* Light grey background */
+  color: #000000; /* Black text */
+  padding: 1rem;
+  border: none;
+  border-radius: 0.25rem;
+  transition: background-color 0.3s ease;
+  width: 100%; /* Button takes full width of grid cell */
+  text-align: center; /* Center text within button */
+}
+
+/* Button hover effect */
+.button:hover {
+  background-color: #dddddd; /* Slightly darker grey on hover */
+}

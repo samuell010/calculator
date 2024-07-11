@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="./src/style.css">
+</head>
+<body>
+    <div class="text-center">
+        <h1 class="title"> Calculator</h1>
+        <div id="calculator" class="calculator">
+            <input type="text" id="display" class="display" disabled>
+            <div class="grid">
+                <!-- First row of buttons -->
+                <button onclick="clearDisplay()" class="button">C</button>
+                <button onclick="inputOperator('/')" class="button">/</button>
+                <button onclick="inputOperator('*')" class="button">*</button>
+                <button onclick="inputOperator('-')" class="button">-</button>
+                
+                <!-- Second row of buttons -->
+                <button onclick="inputNumber(7)" class="button">7</button>
+                <button onclick="inputNumber(8)" class="button">8</button>
+                <button onclick="inputNumber(9)" class="button">9</button>
+                <button onclick="inputOperator('+')" class="button">+</button>
+                
+                <!-- Third row of buttons -->
+                <button onclick="inputNumber(4)" class="button">4</button>
+                <button onclick="inputNumber(5)" class="button">5</button>
+                <button onclick="inputNumber(6)" class="button">6</button>
+                <button onclick="calculateResult()" class="button">=</button>
+                
+                <!-- Fourth row of buttons -->
+                <button onclick="inputNumber(1)" class="button">1</button>
+                <button onclick="inputNumber(2)" class="button">2</button>
+                <button onclick="inputNumber(3)" class="button">3</button>
+                <button onclick="inputNumber(0)" class="button">0</button>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="./src/calculator.ts"></script>
+</body>
+</html>
